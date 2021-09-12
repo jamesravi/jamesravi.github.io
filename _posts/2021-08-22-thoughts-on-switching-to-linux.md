@@ -1,12 +1,15 @@
 ---
 layout: post
 title: Thoughts on switching to Linux (and why you could)
+excerpt: <p>Linux isn't perfect, but given its emphasis on being free (in multiple ways) means it could be a viable choice for you.</p>
 tags:
   - main post
 ---
 
 <img src="{{ site.baseurl }}/images/tux-enhanced-v2.svg" alt="Tux the penguin, mascot of Linux" height="350" />
 *[Tux the penguin](https://en.wikipedia.org/wiki/Tux_(mascot)), mascot of Linux* [^0]
+
+&nbsp;
 
 You’re probably heard of [Linux](https://en.wikipedia.org/wiki/Linux).[^1] Here I’ll try to summarise some advantages and disadvantages, some of which I have found when switching myself to Linux Mint.
 
