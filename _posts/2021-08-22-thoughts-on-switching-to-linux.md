@@ -113,14 +113,14 @@ If you want to try out Linux as a beginner:
 
 [^6]:
 
-     To be honest, even companies that make proprietary OSs struggle with this as well apparently
+     To be honest, even companies that make proprietary OSs struggle with this as well apparently.
 
 [^7]:
 
      To be clear, the latter ones all use Wine (or are compatible with forks such as Proton), but they make it much easier to use Wine which can be quite difficult to configure.
 
 [^8]:
-     Actually, if the [amount of choice available](https://upload.wikimedia.org/wikipedia/commons/8/8c/Linux_Distribution_Timeline_Dec._2020.svg) is causing you to “distro-hop”, I recommend watching [this video](https://www.youtube.com/watch?v=3zpgQpdy_fI). You don’t have to watch it all (I only watched the first few minutes) but the critical parts in my opinion are roughy 1:52 to 2:09, and 2:51 to 3:20 - it basically says you **don’t need the find the “best” distro** (because it doesn’t exist), you just **need one to get the job done (i.e. your day-to-day work)**. If there is a big problem that you can’t work around **then you can switch**, but **otherwise stick with the one you currently got.**
+     Actually, if the [amount of choice available](https://upload.wikimedia.org/wikipedia/commons/8/8c/Linux_Distribution_Timeline_Dec._2020.svg) is causing you to "distro-hop", I recommend watching [this video](https://www.youtube.com/watch?v=3zpgQpdy_fI). You don’t have to watch it all (I only watched the first few minutes) but the critical parts in my opinion are roughy 1:52 to 2:09, and 2:51 to 3:20 - it basically says you **don’t need the find the "best" distro** (because it doesn’t exist), you just **need one to get the job done (i.e. your day-to-day work)**. If there is a big problem that you can’t work around **then you can switch**, but **otherwise stick with the one you currently got.**
 
 [^9]:
 
@@ -128,7 +128,7 @@ If you want to try out Linux as a beginner:
 
 [^10]:
 
-     Note it’s not as black-and-white. Ubuntu realised this newer harder support problem and provides [a newer kernel via what they call the “Hardware Enablement Stack”](https://askubuntu.com/questions/248914/what-is-hardware-enablement-hwe) (and I guess you could try to drop one in yourself in any stable distro anyway) and newer software can be brought in on a stable distro via [backports](https://backports.debian.org/) or through new technologies such as [AppImages](https://appimage.org/), [FlatHub](https://flathub.org) and [Snaps](https://snapcraft.io/) ([although the last is controversial](https://www.reddit.com/r/Ubuntu/comments/gxmksf/linux_mint_dumps_ubuntu_snap/ft3hw80)).
+     Note it’s not as black-and-white. Ubuntu realised this newer hardware support problem and provides [a newer kernel via what they call the "Hardware Enablement Stack"](https://askubuntu.com/questions/248914/what-is-hardware-enablement-hwe) (and I guess you could try to drop one in yourself in any stable distro anyway) and newer software can be brought in on a stable distro via [backports](https://backports.debian.org/) or through new technologies such as [AppImages](https://appimage.org/), [FlatHub](https://flathub.org) and [Snaps](https://snapcraft.io/) ([although the last is controversial](https://www.reddit.com/r/linux/comments/j3ajnf/whats_wrong_with_snaps_why_so_many_people_hate_it)).
 
 [^11]:
      I know on most distros other DEs than the default can be installed later, but some distros will work with and look better with certain DEs (e.g. Cinnamon is heavily customised for Linux Mint), and switching will probably be inconvenient as configuration files that multiple DEs might share would interface with each other.
