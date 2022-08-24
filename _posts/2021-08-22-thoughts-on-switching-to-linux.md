@@ -3,10 +3,10 @@ layout: post
 title: Thoughts on switching to Linux (and why you could)
 excerpt: <p>Linux isn't perfect, but given its emphasis on being free (in multiple ways) means it could be a viable choice for you.</p>
 tags:
-  - main post
+  - long form
 ---
 
-<img src="{{ site.baseurl }}/images/tux-enhanced-v2.svg" alt="Tux the penguin, mascot of Linux" height="350" />
+<img src="{{ site.baseurl }}/images/tux-enhanced-v2.svg" alt="Tux the penguin, mascot of Linux" height="350"/>
 *[Tux the penguin](https://en.wikipedia.org/wiki/Tux_(mascot)), mascot of Linux* [^0]
 
 &nbsp;

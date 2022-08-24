@@ -3,10 +3,10 @@ layout: post
 title: An in-depth look into Android vs. iOS, in terms of security and freedom
 excerpt: <p>We're going over the differences between the two with a very fine comb, but as you'll see, neither is perfect.</p>
 tags:
-  - main post
+  - long form
 ---
 
-<img src="{{ site.baseurl }}/images/iphone-android-chess-battle.jpg">
+![]({{ site.baseurl }}/images/iphone-android-chess-battle.jpg)
 *The battle of the duopoly* [^0]
 
 &nbsp;
