@@ -1,16 +1,3 @@
-{% if site.google_analytics %}
-	<!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{ site.google_analytics }}');
-    </script>
-	<!-- End Google Analytics -->
-{% endif %}
-
 <script>
 // This is a lightweight and privacy-friendly analytics script from Shynet, a self-hosted
 // analytics tool. To give you full visibility into how your data is being monitored, this
