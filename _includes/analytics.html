@@ -1,3 +1,4 @@
+{% if jekyll.environment == "production" %}
 <script>
 // This is a lightweight and privacy-friendly analytics script from Shynet, a self-hosted
 // analytics tool. To give you full visibility into how your data is being monitored, this
@@ -56,3 +57,4 @@ var Shynet = {
 
 window.addEventListener("load", Shynet.newPageLoad);
 </script>
+{% endif %}
