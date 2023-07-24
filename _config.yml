@@ -26,6 +26,8 @@ navigation:
     url: /archive
   - name: Tags
     url: /tags
+  - name: Dissertation
+    url: /dissertation
 
 # Pagination
 paginate: 5
@@ -49,7 +51,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: Copyleft <span class="copyleft">&copy;</span> 2023 James Ravindran. All content (unless noted) is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>.
+footer-text: Copyright © 2023 James Ravindran
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
