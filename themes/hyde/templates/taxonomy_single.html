@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+	<a href="/{{ taxonomy.name }}">< Back to all {{ taxonomy.name }}</a>
+	<h2 id="long form">{{ term.name }}</h2>
+	<ul>
+	{% for post in term.pages %}
+		<li>
+		  {% if post.link %}
+			<a href="{{ post.link }}">
+		  {% else %}
+			<a href="{{ post.permalink }}">
+		  {% endif %}
+			{{ post.title }}
+		  </a>
+		  <time style="color: #757575; font-size: 0.9em; margin-left: 5px;" datetime="{{ post.date | date(format="%Y-%m-%dT%H:%M:%SZ") }}">{{ post.date | date(format="%Y-%m-%d") }}</time>
+		</li>
+	{% endfor %}
+	</ul>
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="posts">
+<h1>Archive</h1>
+
+{% set blog_section = get_section(path="blog/_index.md") %}
+{% set posts = blog_section.pages %}
+{% set prev_year = "" %}
+{% set first = true %}
+
+{% if posts | length == 0 %}
+  <h2>No post found</h2>
+{% endif %}
+
+
+  {% for post in posts %}
+    {% set current_year = post.date | date(format="%Y") %}
+    {% if current_year != prev_year %}
+	  {% if first %}
+	    {% set_global first = false %}
+	  {% else %}
+		</ul>
+	  {% endif %}
+	  <h2>{{ current_year }}</h2>
+	  <ul class="archive">
+    {% endif %}
+	{% set_global prev_year = current_year %}
+
+    <li>
+      {% if post.link %}
+        <a href="{{ post.link }}">
+      {% else %}
+        <a href="{{ post.permalink }}">
+      {% endif %}
+        {{ post.title }}
+      </a>
+      <time style="color: #757575; font-size: 0.9em; margin-left: 5px;" datetime="{{ post.date | date(format="%Y-%m-%dT%H:%M:%SZ") }}">{{ post.date | date(format="%Y-%m-%d") }}</time>
+    </li>
+  {% endfor %}
+</ul>
+</div>
+{% endblock content %}

@@ -1,4 +1,9 @@
-# My personal blog
+# My personal website
 
-Modified from [Kiko Now](https://github.com/aweekj/kiko-now), which in turn is based on [Jekyll Now](https://github.com/barryclark/jekyll-now)
+Built using [Zola](https://www.getzola.org), using a slightly modified [Hyde theme](https://github.com/getzola/hyde).
 
+## Copyright
+
+Copyright (c) 2023 James Ravindran. All rights reserved.
+
+The [original Hyde theme port to Zola](https://github.com/getzola/hyde) is licensed under the MIT license (copyright (c) 2017 Vincent Prouillet) with the [original Hyde theme](https://www.github.com/mdo/hyde) also being under the MIT license (copyright (c) 2013 Mark Otto)

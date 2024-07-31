@@ -1,0 +1,65 @@
+{% extends "index.html" %}
+
+{% block content %}
+<style>
+.post-date {
+  display: inline-block;
+}
+.post .tag {
+  display: inline-block;
+}
+.post .tag li:before {
+  content: '';
+}
+.post .tag li {
+  display: inline;
+  margin: 0;
+}
+.post .tag li > a {
+  margin: 3px 3px 3px 0;
+  padding: .5px 4px;
+  color: #343a40;
+  background-color: #e9ecef;
+  border-radius: 3px;
+}
+</style>
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  {% if page.date %}
+  <time class="post-date" datetime="{{ page.date | date(format="%Y-%m-%dT%H:%M:%SZ") }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+  {% endif %}
+
+{% if page.taxonomies.tags %}
+  <ul class="tag" style="padding-left: 5px;">
+    {% for tag in page.taxonomies.tags %}
+	  <li><a href="/tags#{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+  </br>
+{% endif %}
+
+  {{ page.content | safe }}
+  {% if not config.base_url is containing("127.0.0.1") %}
+	{% if page.extra.comments is not defined or page.extra.comments != false %}
+		<script src="https://giscus.app/client.js"
+				data-repo="jamesravi/blog-comments"
+				data-repo-id="MDEwOlJlcG9zaXRvcnkzOTg4MTEyODY="
+				data-category="Announcements"
+				data-category-id="DIC_kwDOF8Vgls4CXbAa"
+				data-mapping="pathname"
+				data-strict="0"
+				data-reactions-enabled="1"
+				data-emit-metadata="0"
+				data-input-position="top"
+				data-theme="preferred_color_scheme"
+				data-lang="en"
+				data-loading="lazy"
+				crossorigin="anonymous"
+				async>
+		</script>
+	{% endif %}
+  {% endif %}
+</div>
+{% endblock content %}
+
