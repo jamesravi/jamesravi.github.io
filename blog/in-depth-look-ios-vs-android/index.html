@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>James Ravindran</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://www.jamesravindran.com/print.css" media="print">
+      <link rel="stylesheet" href="https://www.jamesravindran.com/poole.css">
+      <link rel="stylesheet" href="https://www.jamesravindran.com/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+	  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	  
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+      <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css"/>
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;www.jamesravindran.com"><h1>James Ravindran</h1></a>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;blog">Blog</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;archive">Archive</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;tags">Tags</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;dissertation">Dissertation</a></li>
+                        
+                        
+                    </ul>
+					
+					<nav class="sidebar-social" style="margin-bottom: 0.5rem;">
+						<a href="https://github.com/jamesravi" target="_blank" title="GitHub"><i class='bx bxl-github bx-md'></i></a>
+						<a href="https://www.linkedin.com/in/james-ravindran" target="_blank" title="GitHub"><i class='bx bxl-linkedin-square bx-md' ></i></a>
+					</nav>
+					
+					<p>© 2024. All rights reserved. </p>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+			
+<style>
+.post-date {
+  display: inline-block;
+}
+.post .tag {
+  display: inline-block;
+}
+.post .tag li:before {
+  content: '';
+}
+.post .tag li {
+  display: inline;
+  margin: 0;
+}
+.post .tag li > a {
+  margin: 3px 3px 3px 0;
+  padding: .5px 4px;
+  color: #343a40;
+  background-color: #e9ecef;
+  border-radius: 3px;
+}
+</style>
+
+<div class="post">
+  <h1 class="post-title">An in-depth look into Android vs. iOS, in terms of security and freedom</h1>
+  
+  <time class="post-date" datetime="2021-09-12T00:00:00Z">2021-09-12</time>
+  
+
+
+  <ul class="tag" style="padding-left: 5px;">
+    
+	  <li><a href="/tags#long form">long form</a></li>
+    
+  </ul>
+  </br>
+
+
+  <p><img src="/iphone-android-chess-battle.jpg" alt="" />
+<em>The battle of the duopoly</em> <sup class="footnote-reference" id="fr-0-1"><a href="#fn-0">[1]</a></sup></p>
+<p> </p>
+<p>Now, in this post I’m going to dive into the whole rabbit hole of benefits and problems surrounding the two dominant players in smartphones today - <strong>Android and iOS</strong> - and whether there are any solutions in sight. We’re going over this with a very fine comb, so be prepared to brace yourself - <strong>if you’re running short of time, don’t worry</strong>, I’ve put an (admittedly vague) <strong>conclusion at the end</strong>, but as you are about to see (as with many things), <strong>neither is perfect.</strong></p>
+<p><strong>As a disclaimer before we start</strong> - due to my perhaps soft heart for open source (although I’d think you would agree is definitely beneficial for all), <strong>I do lean towards Android, but the irony is that I still begrudgingly use iOS devices</strong> - you’ll probably see why but I’ll explain at the end anyway.</p>
+<h2 id="ios">iOS</h2>
+<p>Let’s start with iOS. To give credit to Apple, because they control all the hardware and software, they <strong>will keep providing all security patches for your device</strong> - but <strong>only if you are running the latest major iOS version</strong>. If you are not, you don’t need to worry too much, but <a href="https://apple.stackexchange.com/questions/223170/what-is-apples-policy-for-supporting-security-updates-on-older-versions-of-ios">Apple <strong>will only provide updates for severe vulnerabilities</strong></a> (such as against exploits in Safari) for iOS versions near to the latest one. In a sense, <strong><a href="https://security.stackexchange.com/questions/135781/does-apple-backport-fixes">you might be more vulnerable if you are on much lower iOS versions</a></strong> (as Apple probably will presume most people will use the latest version for their device and not care to backport fixes too far) but <strong>upgrading might <a href="https://www.reddit.com/r/LegacyJailbreak/comments/li4te8/question_should_i_downgrade_ipad_3_from_935_to_841/gn15brz">cause you to lose performance and more “stronger” jailbreaks</a></strong> (such as those that use untethered exploits)<sup class="footnote-reference" id="fr-1-1"><a href="#fn-1">[2]</a></sup></p>
+<p>However, this control, although opinions may vary on this, comes at a cost in freedom. <strong>Non-jailbroken iPhones can only download software from Apple’s curated App Store</strong> - a “walled garden” in a sense (there’s <a href="https://www.reddit.com/r/explainlikeimfive/comments/9qsbo8/eli5_what_is_a_wall_garden/e8blw0y">a nice explanation applying this analogy on Reddit</a>). Of course, the reasoning for this is so Apple can check apps are safe before offering them to users (instead of checking them yourself as on Windows or Android<sup class="footnote-reference" id="fr-2-1"><a href="#fn-2">[3]</a></sup>), and although the App Store does contain quite a lot of software, there is <strong>a perception that Apple uses this in an additional way to reject apps that they don’t like.</strong> For instance, <strong>you cannot easily get software like emulators on iOS</strong> (on Android, you can simply sideload them, but <a href="https://play.google.com/store/apps/details?id=com.retroarch">Google seemingly does allow them on its Play Store, such as RetroArch</a>). Apple has faced criticism over its treatment of third-party developers from companies such as <strong><a href="https://www.gamasutra.com/view/news/318850/Valves_Steam_Link_app_blocked_by_Apple_due_to_business_conflicts.php">Valve</a>, <a href="https://www.hey.com/apple/">Basecamp</a> and <a href="https://www.theverge.com/22611236/epic-v-apple-emails-project-liberty-app-store-schiller-sweeney-cook-jobs">most famously Epic Games whose lawsuit brought a massive amount of revelations</a>, shedding light on Apple and even other notable companies in the technology and game industries as a whole.</strong></p>
+<p> </p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/euiSHuaw6Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><em>Epic parodied <a href="https://en.wikipedia.org/wiki/1984_(advertisement)">Apple's famous 1984 advert</a> as it filed its lawsuit, alleging Apple holds a monopolistic position over its App Store.</em><sup class="footnote-reference" id="fr-20-1"><a href="#fn-20">[4]</a></sup></p>
+<p> </p>
+<p>I’d also point out that unlike Android<sup class="footnote-reference" id="fr-3-1"><a href="#fn-3">[5]</a></sup>, <strong>you cannot use custom ROMs or other operating systems on iOS devices.</strong> This is because Apple employs <strong><a href="https://support.apple.com/en-gb/guide/security/secb3000f149/web">a chain of trust</a> as a security measure during booting</strong> that ensures each successive stage that runs is signed only by them.<sup class="footnote-reference" id="fr-4-1"><a href="#fn-4">[6]</a></sup> The very first stage is <strong>written directly to the <a href="https://www.theiphonewiki.com/wiki/Bootrom">ROM chip (Bootrom)</a>, so it cannot be modified.<sup class="footnote-reference" id="fr-5-1"><a href="#fn-5">[7]</a></sup></strong> In theory, you could <a href="https://wiki.postmarketos.org/wiki/Apple_iPhone_7/7%2B_(apple-iphone7)">boot another OS using a semi-tethered exploit</a> such as <a href="https://checkra.in/">checkra1n</a> (but as the name implies, you need to have the iPhone connected to a computer to exploit it while it is booting, which is quite inconvenient). <sup class="footnote-reference" id="fr-6-1"><a href="#fn-6">[8]</a></sup> <sup class="footnote-reference" id="fr-7-1"><a href="#fn-7">[9]</a></sup></p>
+<p>In response to iOS’s walled garden, a lot of users “break out of this jail” using community-developed <strong>jailbreak</strong> exploits. <strong>Jailbreaking is <a href="https://en.wikipedia.org/wiki/Jailbreaking_(iOS)#United_States">certainly legal, at least in the US</a></strong>,<sup class="footnote-reference" id="fr-8-1"><a href="#fn-8">[10]</a></sup> <a href="https://support.apple.com/en-gb/HT201954">despite Apple’s resentment to jailbreaking</a> (and continuous cat-and-mouse patching with each new version) and it does allow you to have more freedom and control over your device like those who use Android.</p>
+<p>There are some, like Apple, that say jailbreaking is a potential security risk, and while I do agree that <strong>if you remain on lower iOS versions<sup class="footnote-reference" id="fr-9-1"><a href="#fn-9">[11]</a></sup>, you might be more susceptible to vulnerabilities that would have been patched</strong> (although there wouldn’t be that many), and perhaps there is <a href="https://www.reddit.com/r/jailbreak/comments/8wu4q9/discussion_can_we_speak_about_people_who_are/">some debate over the quality of some jailbreak exploits</a> (although to be honest I don’t think they would weaken the device to remote exploits at all, and jailbreak authors are simply trying their best to get around iOS’s security measures), it seems the risk of jailbreaking only simply allows the user to install untrusted software, and that <strong>in itself isn’t really an issue with jailbreaking</strong> but more <strong>on the user to be wary of what they install</strong> (especially from piracy or “cracked” repositories), just like on Windows and Android.</p>
+<p>It’s also prudent to acknowledge <strong>government-backed tools such as the <a href="https://en.wikipedia.org/wiki/Pegasus_(spyware)">Pegasus spyware</a></strong>, which has been receiving <a href="https://en.wikipedia.org/wiki/Pegasus_Project_(investigation)">considerable press coverage recently</a>.<sup class="footnote-reference" id="fr-10-1"><a href="#fn-10">[12]</a></sup> iOS is closed source, which means third-party researchers find it harder to find and report security issues. Google’s Project Zero has <strong><a href="https://9to5google.com/2020/07/22/google-project-zero-ios-srd/">criticised Apple for being less accommodating to researchers</a> and <a href="https://googleprojectzero.blogspot.com/2019/08/a-very-deep-dive-into-ios-exploit.html">lax on iOS security</a></strong> in general. It’s debatable, but it is concerning that <a href="https://googleprojectzero.blogspot.com/2021/01/a-look-at-imessage-in-ios-14.html">Apple’s BlastDoor service in iOS 14</a>, designed to protect against the zero-day iMessage exploits Pegasus was using in iOS 13, <strong>clearly <a href="https://twitter.com/billmarczak/status/1416801637104902146">isn’t working since Pegasus can still infect a fully updated iPhone on iOS 14.6</a>.</strong> Then again, given the <a href="https://www.reddit.com/r/OutOfTheLoop/comments/opzpd2/what_is_going_on_with_pegasus_project/h6a9ssz/">difficulty and cost of finding or obtaining these zero-day exploits</a>, it’s probably not a concern for the average user. But in the end, such incidents are leading to a general shift in opinion: that <strong><a href="https://www.wired.com/story/android-zero-day-more-than-ios-zerodium/">Android may actually be slightly more secure than iOS</a></strong> (although you'll see the catch with this later)</p>
+<h2 id="android">Android</h2>
+<p>Android, on the other hand, is <strong>much more open</strong>. <a href="https://source.android.com/setup/start/licenses">Android itself is an <strong>open-source project</strong> licensed under the permissive Apache License, and is bundled with the Linux kernel where Google’s patches to it are under GPL</a>.<sup class="footnote-reference" id="fr-11-1"><a href="#fn-11">[13]</a></sup> This means that anyone, particularly those in the cybersecurity industry, can <strong>readily look and examine the code for security issues and other problems</strong>, and <strong>even contribute to Android themselves</strong>.<sup class="footnote-reference" id="fr-12-1"><a href="#fn-12">[14]</a></sup></p>
+<p><strong>A lot of people consider Android to be insecure, but this seems to be a common misconception.</strong> Android, unlike iOS, simply allows you to download and install (“sideload”) random apps from anywhere (once you’ve enabled a setting at first usually). Admittedly, <a href="https://www.zdnet.com/article/malicious-apps-on-google-play-dropped-banking-trojans-on-user-devices/">some malicious apps have been found on Google’s Play Store</a>, but even Google can’t validate them all (<a href="https://en.wikipedia.org/wiki/XcodeGhost">as can’t Apple</a>), <strong>the user should probably treat less known applications with caution before installing them</strong> (as on Windows and other platforms), sandboxing measures in both iOS and Android should reduce the impact (though as we’ve seen with Pegasus and self-root/semi-untethered jailbreaking apps, these can be bypassed through vulnerabilities), and <strong>both iOS and Android have measures to monitor and remotely remove malware from your phone</strong> - as seen with <a href="https://android-developers.googleblog.com/2017/04/an-investigation-of-chrysaor-malware-on.html">Google doing so with the Pegasus version on Android which they nicknamed “Chrysaor”</a>.<sup class="footnote-reference" id="fr-13-1"><a href="#fn-13">[15]</a></sup></p>
+<p>Being a more open platform brings many other benefits as well, which I’ll list here in comparison to iOS:</p>
+<ul>
+<li>
+<p><strong>Developers can make apps on Windows, Linux and MacOS for Android</strong> using <a href="https://developer.android.com/studio">Android Studio</a>. <strong>For iOS, you can only officially make apps on MacOS</strong> since <a href="https://developer.apple.com/xcode/">XCode</a> is only available there. There might be ways to make iOS apps using <a href="https://iphonedev.wiki/index.php/Theos">the community SDK for jailbreaking called Theos</a>, but I’m doubtful Apple will allow them into its official App Store if they are aware they’ve been made using it.</p>
+</li>
+<li>
+<p><strong>Developers can freely distribute apps on Android outside of the Play Store</strong>, and if they want to release it on the Play Store anyway, it’s only <a href="https://www.androidauthority.com/publishing-first-app-play-store-need-know-383572/">a one-time fee of $25</a> (for iOS, to release an app on the App Store you <a href="https://developer.apple.com/programs/how-it-works/">must pay <strong>a $99 subscription per year</strong></a>, and you <strong>officially sign the app on a Mac</strong> (<a href="https://stackoverflow.com/questions/18739387/build-an-ios-app-without-owning-a-mac">although there are ways around that apparently</a>). This is probably fine for most businesses who can afford it, but for open-source developers - such as the ones who made <a href="https://www.reddit.com/r/irc/comments/d3y75s/are_there_any_free_open_source_irc_clients_for_ios/f05ybf7">the IRC client Mutter, which ceased development a while ago for presumably this reason</a> - and hobbyists it’s very cost prohibitive, and it’s why most iOS apps are more likely to be paid apps, or utilise in-app purchases and adverts. That’s why <strong>on Android you readily get lots more cool stuff</strong> such as from <a href="https://www.f-droid.org/"><strong>F-Droid</strong>, a large collection of <strong>free and open-source applications</strong></a> that are safe<sup class="footnote-reference" id="fr-14-1"><a href="#fn-14">[16]</a></sup> and warn you of issues such as privacy before installing them.</p>
+</li>
+<li>
+<p>For Android, <strong>apparently you can install third-party applications to better secure your phone</strong> (of course, in a sandbox <a href="https://www.howtogeek.com/232436/android-has-a-big-security-problem-but-antivirus-apps-cant-do-much/">these antivirus apps are utterly useless. Don’t really buy into them</a>, especially more on iOS, but in general they are quite ineffective - and, in the end, it’s more effective to be careful what you install in the first place). <a href="https://www.forbes.com/sites/zakdoffman/2021/03/16/iphone-12-pro-max-and-iphone-13-not-more-secure-than-google-and-samsung-android-warns-cyber-billionaire/">I speak more for <strong>professional solutions that will probably affect the phone on the OS level</strong></a> such as those that run as root or patch the phone directly. Although I haven’t used them myself (so I can only speculate), it seems it would be <strong>way easier on Android than iOS</strong> to do this sort of thing due to <strong>Android’s open nature</strong>. <strong>With iOS you are more 100% reliant on Apple to secure your phone</strong> (and with things like Pegasus this can be a concern).</p>
+</li>
+</ul>
+<p>And finally I should mention (although you can probably guess), <strong>Google happily gives the code away to all kinds of manufacturers such as Samsung, OnePlus, Sony etc.</strong> to use as long as they are part of <a href="https://en.wikipedia.org/wiki/Open_Handset_Alliance">Google’s Open Handset Alliance</a> (and even those who don’t want to join, such as Amazon, <strong><a href="https://en.wikipedia.org/wiki/Fire_OS">can still use Android due to its open-source license for their devices</a></strong>).</p>
+<p>Now, you’re probably wondering, what’s the catch? <strong>Fragmentation is the catch, my friend.</strong></p>
+<img src="/android-fragmentation-everywhere.png">
+<p>Now, I would like to emphasise, <strong>fragmentation is not inherently a bad thing</strong>. The wide variety of Android devices is really <strong>a strength of the ecosystem that gives users more choice</strong>. The <strong>ability for different companies to produce phones</strong> offers opportunities to them to <strong>produce innovative features and differentiate their brands</strong> (which would be more sluggishly adopted by Apple's more consistent but concentrated and monolithic approach due to them being heavily vertically integrated).</p>
+<p>In comparison to Android, <strong>Microsoft has somehow handled fragmentation incredibly well over the several decade long PC market</strong><sup class="footnote-reference" id="fr-22-1"><a href="#fn-22">[17]</a></sup> such that we've managed to get a single operating system to boot across <strong>thousands of variations of hardware</strong> thanks to <strong>a standardised BIOS</strong>. Unfortunately, <strong>that doesn’t exist on ARM</strong><sup class="footnote-reference" id="fr-23-1"><a href="#fn-23">[18]</a></sup>. Fragmentation is probably the reason that <strong>Android is the most installed OS of all time</strong>, but the way fragmentation is handled in Android does lead to severe problems with updates (more importantly security ones).</p>
+<p>Basically, for Android, <strong>Google hands the code through <a href="https://www.xda-developers.com/googles-project-treble-modularize-android-so-oems-can-update-devices-faster/">like 5 different companies</a></strong> who all modify it so it runs on the final device. So, essentially, <strong>there’s probably hundreds if not thousands of forks of Linux</strong> (with proprietary binary drivers etc.) <strong>for each individual Android device</strong>. Passing through updates, such as security ones, through that chain will be slow, and worst of all, when one of those companies decides it is no longer financially viable to support your device, <strong>updates will completely stop</strong>. There’s an estimated one billion Android devices, vulnerable to publicly known exploits such as <a href="https://en.wikipedia.org/wiki/KRACK">KRACK</a> and <a href="https://en.wikipedia.org/wiki/Dirty_COW">Dirty COW</a> and <a href="https://en.wikipedia.org/wiki/Stagefright_(bug)">Stagefright</a> (and almost certainly dozens of vulnerabilities in default web browsers on the device and other programs). I mean, in theory, if you’re extremely careful, you might be okay, but it’s like walking on eggshells, and it’s much better if you get a new phone immediately.<sup class="footnote-reference" id="fr-15-1"><a href="#fn-15">[19]</a></sup></p>
+<p>Google is <strong>trying to improve the situation with things like <a href="https://source.android.com/devices/architecture#hidl">Project Treble</a></strong>, although <a href="https://postmarketos.org/faq/#can-project-treble-help-postmarketos">some do criticise</a> that <a href="https://ollieparanoid.github.io/post/security-warning/#outdated-firmware-threatens-old-smartphones">the kernel and firmware do not receive any further updates</a>, and that older devices (unless supported by the community) never get the chance to experience Project Treble. Still, it is bringing out <a href="https://www.androidcentral.com/project-treble-working-even-if-android-updates-dont-all-come-day-one">faster updates for certain phones</a> (for at least the OS component) and now has brought <a href="https://github.com/phhusson/treble_experimentations/wiki">generic custom ROMs</a> that work with many devices, which is nice.</p>
+<h2 id="linux-on-smartphones">Linux on smartphones?</h2>
+<p>To note, <strong>Android phones do have the ability to use custom ROMs</strong> like <a href="https://lineageos.org/">LineageOS</a> (it depends on the phone in general, although <a href="https://www.reddit.com/r/fossdroid/comments/ewd3rs/the_best_custom_rom_supported_phone/">Google and OnePlus phones tend to have the best support</a> apparently), but the ideal solution for supporting running Linux would be if all Android OEMs<sup class="footnote-reference" id="fr-16-1"><a href="#fn-16">[20]</a></sup> release the source code for the drivers on their phones,<sup class="footnote-reference" id="fr-17-1"><a href="#fn-17">[21]</a></sup> but of course all(?) of them do not.<sup class="footnote-reference" id="fr-18-1"><a href="#fn-18">[22]</a></sup> The good news is that there is <strong>a community project called <a href="https://postmarketos.org/">postmarketOS</a></strong> which is seeking to bring mainline Linux to old devices and therefore fix the Android longevity problem, <a href="https://cascardo.eti.br/blog/GNU_on_Smartphones_part_II/">among others</a>.</p>
+<p>Personally, to be honest, I don’t mind sacrificing the higher quality (although it is subjective) that comes with iOS or Android for the true Linux freedom on a device - the only issue is that <strong><a href="https://wiki.postmarketos.org/wiki/Devices">support for phone by phone varies</a></strong>, and even the <a href="https://en.wikipedia.org/wiki/PinePhone">PinePhone</a> which is made to support mainline Linux <strong><a href="https://www.reddit.com/r/PINE64official/comments/m9kc82/is_the_pinephone_a_suitable_daily_driver_yet/grnzaxc">isn’t up to the reliability of Android and iOS phones</a>.</strong> I’m not sure if it is down to either the hardware (as <a href="https://www.reddit.com/r/PINE64official/comments/njjdfb/considering_of_buying_pine64_phone/gz7v296">this Reddit comment</a> and <a href="https://www.reddit.com/r/PINE64official/comments/n5xrwk/pinephone_thoughts/gx3ymhq">this other Reddit comment</a> seem to imply) or the software (<a href="https://boilingsteam.com/the-pinephone-can-it-replace-your-smartphone/">as this review seems to suggest</a>). Nonetheless, <strong>it is very encouraging to see a community who is aware of the issues that face iOS and Android today trying to provide the ideal solution.</strong></p>
+<h2 id="conclusion-tl-dr">Conclusion (tl;dr)</h2>
+<p>In conclusion, though, then again it is up to you. It seems possible that <strong>Android is slightly more secure (and certainly more open) than iOS</strong> due to the former’s open source nature, but sadly, <strong>much of this is negated by the poorer flow of updates received on most Android phones</strong>. It’s exactly why I use iOS<sup class="footnote-reference" id="fr-21-1"><a href="#fn-21">[23]</a></sup>, because despite where I look, it seems unfortunate that Android phones (<a href="https://www.reddit.com/r/Android/comments/grlik7/two_years_of_software_updates_is_no_longer_enough/">even those reaching $1,000</a> and <a href="https://support.google.com/pixelphone/answer/4457705">those being supported by Google directly</a>) only get at least two years in updates, which pales in comparison to iOS devices reaching around six years (such as those released in around 2015/2016 still receiving updates today).</p>
+<p>If you want something usable and reliable (more importantly, in calling and texting) at the present, you’ll have to pick between <strong>iOS (less freedom<sup class="footnote-reference" id="fr-19-1"><a href="#fn-19">[24]</a></sup> and more expensive but with longer update support)</strong> or <strong>Android (more freedom and cheaper but with shorter update support).</strong> Linux-based community efforts are encouraging, but they are not usable yet as a daily driver for most people (but hopefully they will be one day).</p>
+<hr><ol class="footnotes-list">
+<li id="fn-0">
+<p><a href="https://www.flickr.com/photos/nrkbeta/3905907831">"iPhone vs Android"</a> by NRKbeta / Marius Arnesen (licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/no/">CC BY-SA 3.0 NO</a>) <a href="#fr-0-1">↩</a></p>
+</li>
+<li id="fn-1">
+<p>By the way, if you did want to downgrade your old iOS device for jailbreaking purposes, there is <a href="https://github.com/LukeZGD/iOS-OTA-Downgrader">a tool on GitHub to do so</a>. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="fn-2">
+<p>On how to actually check them yourself, I’ll probably write another post about that - but basically, you can use websites such as <a href="https://www.virustotal.com">VirusTotal</a>. Note they’re not perfect - they might give false positives, or <a href="https://www.howtogeek.com/howto/30508/make-sure-downloads-are-safe-before-downloading-them/">sometimes even give a clean result even if what you’re scanning is malware</a>, but it’s a good rule of thumb anyway. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="fn-20">
+<p>This whole battle of the Tims (lol) is kind of dripping in irony. Arguably, this video is a clever move by Epic, as it <a href="https://www.polygon.com/2020/8/13/21367803/fortnite-1984-apple-app-store-epic-lawsuit-commercial-short-video">reframes Apple into the position it believed IBM were in 1984</a>. And in some "ironyception", the trial's ruling (on page 23) reveals Epic planned to push this as part of a "pre-planned, and blistering, marketing campaign" that would convince the public that they were "benevolent" and that "at the same time make Apple out to be the bad guys". <strong>It's hard to state how much this trial revealed</strong> - if you want to read more I suggest <a href="https://www.theverge.com/22611236/epic-v-apple-emails-project-liberty-app-store-schiller-sweeney-cook-jobs">this article by the Verge</a> which uncovers some points in emails brought up during the trial, and of course if you somehow have time you can read <a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.812.0_3.pdf"><strong>the full 185 page ruling here</strong></a> (although most press articles have summarised some main points and conclusions from that). Interestingly as well, the NSA <a href="https://9to5mac.com/2013/09/10/nsa-references-original-macintosh-ad-in-calling-steve-jobs-big-brother-and-iphone-owners-zombies/">also made the same comparison as Epic</a> privately, although perhaps for different reasons. <a href="#fr-20-1">↩</a></p>
+</li>
+<li id="fn-3">
+<p>Well, it’s easier on some Android devices than others, but definitely not near-impossible like on iOS devices. <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="fn-4">
+<p>Fun fact: this is why you need to resign apps every week on newer jailbroken devices, because Apple utilises signing everywhere for software on iOS (more specifically, jailbreakers utilise development certificates to get around these signing measures, which is why they expire after a week). There are tools such as <a href="https://cydia.akemi.ai/?page/net.angelxwind.appsyncunified">AppSync Unified</a> and <a href="https://altstore.io/">AltStore</a> that negotiate around this in a way, but you can see it is more cumbersome than Android. <a href="#fr-4-1">↩</a></p>
+</li>
+<li id="fn-5">
+<p>Nice thing however is that even Apple can’t modify it, so jailbreak exploits from it such as the famous <a href="https://arstechnica.com/information-technology/2019/09/developer-of-checkm8-explains-why-idevice-jailbreak-exploit-is-a-game-changer/">checkm8</a> cannot be patched. <a href="#fr-5-1">↩</a></p>
+</li>
+<li id="fn-6">
+<p>I’d like to point out there is <a href="https://getutm.app/">this awesome open source virtual machine app called UTM</a> that allows you to run virtual machines with OSs such as Linux distributions or even Windows itself on iOS, but unfortunately for me <a href="https://github.com/utmapp/UTM/issues/405">it only supports iOS 11 and above</a>, so much like older Android devices and their updates my older iPad 3 will never see it :( <a href="#fr-6-1">↩</a></p>
+</li>
+<li id="fn-7">
+<p>Also for another thought - I wonder if you have an untethered jailbreak that perhaps you could boot into another OS from perhaps a partition on the device? It wouldn’t be perfect as you would have to boot into iOS anyway first which is annoying, but would it be possible? It feels similar to vein to asking whether it would be possible to switch execution and boot into a Linux distro while Windows is running (perhaps by killing off Windows processes). If I had more experience I would try it, but I wonder if it is possible. <a href="#fr-7-1">↩</a></p>
+</li>
+<li id="fn-8">
+<p>To be honest, I’m more amazed Apple somehow hasn’t taken legal action against Cydia for selling paid iOS apps and tweaks outside the App Store, given that Apple is quite willing to take legal action against companies for issues such as <a href="https://www.theregister.com/2018/02/13/apple_github_iboot/">source code leaks</a> and <a href="https://www.theverge.com/2021/8/11/22620014/apple-corellium-security-virtual-iphone-dmca-lawsuit-settled">iOS virtual machines</a>, and Apple would certainly be aware of Cydia’s existence if not before <a href="https://www.theverge.com/2020/12/10/22167964/cydia-sues-apple-monopoly-anticompetitive-iphone">by its own lawsuit against the perceived iOS monopoly</a>. Perhaps paid iOS “homebrew” is legal? <a href="#fr-8-1">↩</a></p>
+</li>
+<li id="fn-9">
+<p>I believe updating is possible if you are jailbroken, although you have to wait for a jailbreak for the updated iOS version if there isn’t one available (since semi-untethered jailbreaks do not survive a reboot) <a href="#fr-9-1">↩</a></p>
+</li>
+<li id="fn-10">
+<p>If you are interested in reading more about Pegasus, <a href="https://citizenlab.ca/tag/pegasus/">Citizen Lab</a> (who discovered it in 2016) has some excellent articles on it and the people affected. There’s also <a href="https://www.reddit.com/r/OutOfTheLoop/comments/opzpd2/what_is_going_on_with_pegasus_project/h6avn1e/">this Reddit comment</a> which I found gives a nice balanced and wide overview surrounding the nature and origin of these tools. <a href="#fr-10-1">↩</a></p>
+</li>
+<li id="fn-11">
+<p>If you’ve confused by how Google is allowed to do this, my understanding is that Android is a program that runs on top of the Linux kernel and is not combined with it - <a href="https://github.com/torvalds/linux/blob/master/LICENSES/exceptions/Linux-syscall-note">there’s a GPL exception in the Linux kernel for the syscall interface anyway</a>. There are a lot of proprietary legal applications that run on Linux such as Steam and Microsoft Teams, so in a sense Android is legal. <a href="#fr-11-1">↩</a></p>
+</li>
+<li id="fn-12">
+<p>Some argue that the source code being public means that it is easier to find vulnerabilities in Android, but in my opinion that’s a good thing, because they can be patched quickly. The security of an operating system should never depend on its code being private - trying to do this is called “<a href="https://en.wikipedia.org/wiki/Security_through_obscurity">security through obscurity</a>” - and it seems unanimously people agree it is a bad idea, as <a href="https://www.debian.org/security/">exemplified by open source projects such as Debian</a>. <a href="#fr-12-1">↩</a></p>
+</li>
+<li id="fn-13">
+<p>You can also see Google’s willingness to embrace third-party security researchers more readily than Apple, given that they <a href="https://android-developers.googleblog.com/2017/04/an-investigation-of-chrysaor-malware-on.html">have uploaded Chrysaor binaries to VirusTotal (at the bottom of the post)</a>. They even notified those who had been affected, unlike Apple. <a href="#fr-13-1">↩</a></p>
+</li>
+<li id="fn-14">
+<p>Almost certainly, at least, because in a similar vein to default software repositories on Linux distributions all the applications have open source code, so they can be checked by others and built into binaries on the servers themselves. <a href="#fr-14-1">↩</a></p>
+</li>
+<li id="fn-22">
+<p>What’s more amusing to me is that this all started because <a href="https://en.wikipedia.org/wiki/IBM_PC_compatible">everyone was cloning IBM’s PC</a>, so it seems entirely accidental. <a href="#fr-22-1">↩</a></p>
+</li>
+<li id="fn-23">
+<p>To be honest I don’t know if it can be conjured into being, perhaps Google should strong arm OEMs into supporting UEFI. <a href="#fr-23-1">↩</a></p>
+</li>
+<li id="fn-15">
+<p>You can see this isn’t good for e-waste either. Some would also say that the <a href="https://en.wikipedia.org/wiki/Batterygate">slowing down of iPhones with newer software updates</a>, but at least they last for longer in theory: iOS devices seem to last around 6 years, while Android devices such as those from Google may reach 2 years if you are lucky. <a href="#fr-15-1">↩</a></p>
+</li>
+<li id="fn-16">
+<p>I guess blame could be placed on OEMs for heavily customising Android for their devices (in the sense that they burden themselves to maintain their forks more rather than using features present in “mainline” Android/the Linux kernel), but some are also <a href="https://www.reddit.com/r/Android/comments/grlik7/two_years_of_software_updates_is_no_longer_enough/fs0c5gt">shifting some blame onto Google</a> in the same vein. <a href="#fr-16-1">↩</a></p>
+</li>
+<li id="fn-17">
+<p>And also if there was <a href="https://www.reddit.com/r/AndroidQuestions/comments/mk3k3z/why_is_android_so_locked_down_compared_to_linux/gtdouq0?utm_source=share&amp;utm_medium=web2x&amp;context=3">some standardised BIOS/UEFI for ARM like on PCs</a>, but maybe that’s asking too much. <a href="#fr-17-1">↩</a></p>
+</li>
+<li id="fn-18">
+<p>Fun fact: given that Android uses the Linux kernel, and that the Linux kernel is licensed under GPL, in theory you can <a href="https://www.xda-developers.com/oems-and-gpl-compliance/">legally ask your Android OEM to give you the source code for the kernel</a> because they obviously distribute the kernel as part of the phone. <a href="#fr-18-1">↩</a></p>
+</li>
+<li id="fn-21">
+<p>Funnily enough, since I brought up the Epic Games trial here, <strong>Tim Sweeney</strong>, the CEO who is leading this "crusade" (as Judge Rogers put it in the ruling) against Apple <strong>uses an iPhone himself</strong> as well. <a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.364265/gov.uscourts.cand.364265.812.0_3.pdf">From the ruling</a> - <em>"Mr. Sweeney himself owns an iPhone in part because of its better security and privacy than Android."</em> (on p.110) and <em>"Mr. Sweeney, an iPhone user himself, admitted that he found Apple’s approach to privacy and customer data security superior to Google’s approach to customer privacy and customer data."</em> (on p.45). It's rather funny, and I've also realised from this (although it's probably obvious) that for Apple it is more important business-wise to sell devices rather than Google (which obtains most of its revenue from advertising), which may explain why Android is in a more "dire" state. <a href="#fr-21-1">↩</a></p>
+</li>
+<li id="fn-19">
+<p>Of course, as mentioned, you can jailbreak, but as Android is more accommodating to openness in general it is considerably better in this regard, such as in terms of the amount of possible software. <a href="#fr-19-1">↩</a></p>
+</li>
+</ol>
+
+  
+	
+		<script src="https://giscus.app/client.js"
+				data-repo="jamesravi/blog-comments"
+				data-repo-id="MDEwOlJlcG9zaXRvcnkzOTg4MTEyODY="
+				data-category="Announcements"
+				data-category-id="DIC_kwDOF8Vgls4CXbAa"
+				data-mapping="pathname"
+				data-strict="0"
+				data-reactions-enabled="1"
+				data-emit-metadata="0"
+				data-input-position="top"
+				data-theme="preferred_color_scheme"
+				data-lang="en"
+				data-loading="lazy"
+				crossorigin="anonymous"
+				async>
+		</script>
+	
+  
+</div>
+
+        </div>
+    </body>
+
+
+<script>
+// This is a lightweight and privacy-friendly analytics script from Shynet, a self-hosted
+// analytics tool. To give you full visibility into how your data is being monitored, this
+// file is intentionally not minified or obfuscated. To learn more about Shynet (and to view
+// its source code), visit <https://github.com/milesmcc/shynet>.
+//
+// This script only sends the current URL, the referrer URL, and the page load time. That's it!
+
+var Shynet = {
+  idempotency: null,
+  heartbeatTaskId: null,
+  skipHeartbeat: false,
+  heartbeat_frequency: 5000, // How frequently should the tracking script "phone home" with a heartbeat, in milliseconds?
+  sendHeartbeat: function () {
+    try {
+      if (document.hidden || Shynet.skipHeartbeat) {
+        return;
+      }
+
+      Shynet.skipHeartbeat = true;
+      var xhr = new XMLHttpRequest();
+      xhr.open(
+        "POST",
+        "https://jamesravindran.eu.pythonanywhere.com/shynet",
+        true
+      );
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onload = function () { 
+        Shynet.skipHeartbeat = false;
+      };
+      xhr.onerror = function () { 
+        Shynet.skipHeartbeat = false;
+      };
+      xhr.send(
+        JSON.stringify({
+          idempotency: Shynet.idempotency,
+          referrer: document.referrer,
+          location: window.location.href,
+          loadTime:
+            window.performance.timing.domContentLoadedEventEnd -
+            window.performance.timing.navigationStart,
+        })
+      );
+    } catch (e) {}
+  },
+  newPageLoad: function () {
+    if (Shynet.heartbeatTaskId != null) {
+      clearInterval(Shynet.heartbeatTaskId);
+    }
+    Shynet.idempotency = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+    Shynet.skipHeartbeat = false;
+    Shynet.heartbeatTaskId = setInterval(Shynet.sendHeartbeat, Shynet.heartbeat_frequency);
+    Shynet.sendHeartbeat();
+  }
+};
+
+window.addEventListener("load", Shynet.newPageLoad);
+</script>
+
+
+<script src="https://unpkg.com/littlefoot/dist/littlefoot.js" type="application/javascript"></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+
+</html>

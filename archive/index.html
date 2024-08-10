@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>James Ravindran</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://www.jamesravindran.com/print.css" media="print">
+      <link rel="stylesheet" href="https://www.jamesravindran.com/poole.css">
+      <link rel="stylesheet" href="https://www.jamesravindran.com/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+	  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	  
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+      <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css"/>
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;www.jamesravindran.com"><h1>James Ravindran</h1></a>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;blog">Blog</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;archive">Archive</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;tags">Tags</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;dissertation">Dissertation</a></li>
+                        
+                        
+                    </ul>
+					
+					<nav class="sidebar-social" style="margin-bottom: 0.5rem;">
+						<a href="https://github.com/jamesravi" target="_blank" title="GitHub"><i class='bx bxl-github bx-md'></i></a>
+						<a href="https://www.linkedin.com/in/james-ravindran" target="_blank" title="GitHub"><i class='bx bxl-linkedin-square bx-md' ></i></a>
+					</nav>
+					
+					<p>© 2024. All rights reserved. </p>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+			
+<div class="posts">
+<h1>Archive</h1>
+
+
+
+
+
+
+
+
+
+  
+    
+    
+	  
+	    
+	  
+	  <h2>2021</h2>
+	  <ul class="archive">
+    
+	
+
+    <li>
+      
+        <a href="https:&#x2F;&#x2F;www.jamesravindran.com&#x2F;blog&#x2F;in-depth-look-ios-vs-android&#x2F;">
+      
+        An in-depth look into Android vs. iOS, in terms of security and freedom
+      </a>
+      <time style="color: #757575; font-size: 0.9em; margin-left: 5px;" datetime="2021-09-12T00:00:00Z">2021-09-12</time>
+    </li>
+  
+    
+    
+	
+
+    <li>
+      
+        <a href="https:&#x2F;&#x2F;www.jamesravindran.com&#x2F;blog&#x2F;thoughts-on-switching-to-linux&#x2F;">
+      
+        Thoughts on switching to Linux (and why you could)
+      </a>
+      <time style="color: #757575; font-size: 0.9em; margin-left: 5px;" datetime="2021-08-22T00:00:00Z">2021-08-22</time>
+    </li>
+  
+</ul>
+</div>
+
+        </div>
+    </body>
+
+
+<script>
+// This is a lightweight and privacy-friendly analytics script from Shynet, a self-hosted
+// analytics tool. To give you full visibility into how your data is being monitored, this
+// file is intentionally not minified or obfuscated. To learn more about Shynet (and to view
+// its source code), visit <https://github.com/milesmcc/shynet>.
+//
+// This script only sends the current URL, the referrer URL, and the page load time. That's it!
+
+var Shynet = {
+  idempotency: null,
+  heartbeatTaskId: null,
+  skipHeartbeat: false,
+  heartbeat_frequency: 5000, // How frequently should the tracking script "phone home" with a heartbeat, in milliseconds?
+  sendHeartbeat: function () {
+    try {
+      if (document.hidden || Shynet.skipHeartbeat) {
+        return;
+      }
+
+      Shynet.skipHeartbeat = true;
+      var xhr = new XMLHttpRequest();
+      xhr.open(
+        "POST",
+        "https://jamesravindran.eu.pythonanywhere.com/shynet",
+        true
+      );
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onload = function () { 
+        Shynet.skipHeartbeat = false;
+      };
+      xhr.onerror = function () { 
+        Shynet.skipHeartbeat = false;
+      };
+      xhr.send(
+        JSON.stringify({
+          idempotency: Shynet.idempotency,
+          referrer: document.referrer,
+          location: window.location.href,
+          loadTime:
+            window.performance.timing.domContentLoadedEventEnd -
+            window.performance.timing.navigationStart,
+        })
+      );
+    } catch (e) {}
+  },
+  newPageLoad: function () {
+    if (Shynet.heartbeatTaskId != null) {
+      clearInterval(Shynet.heartbeatTaskId);
+    }
+    Shynet.idempotency = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+    Shynet.skipHeartbeat = false;
+    Shynet.heartbeatTaskId = setInterval(Shynet.sendHeartbeat, Shynet.heartbeat_frequency);
+    Shynet.sendHeartbeat();
+  }
+};
+
+window.addEventListener("load", Shynet.newPageLoad);
+</script>
+
+
+<script src="https://unpkg.com/littlefoot/dist/littlefoot.js" type="application/javascript"></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+
+</html>
